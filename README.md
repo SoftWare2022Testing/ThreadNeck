@@ -14,7 +14,18 @@ sudo apt-get install build-essential linux-headers-$(uname -r)
 
 sudo apt-get install ifstat
 
-sudo apt-get install sysstat
+```
+
+install sysstat from sources
+
+```
+git clone git://github.com/sysstat/sysstat
+
+cd sysstat
+./configure
+./configure --enable-install-cron
+make
+sudo make install
 ```
 
 
