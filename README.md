@@ -36,6 +36,8 @@ sudo make install
 
 
 ## how to run
+
+1. profiling
 ```
 cd ./module
 make
@@ -43,6 +45,15 @@ cd ./recorder
 make
 
 ./record.sh your_program_name
+```
+
+you will see a folder containitng all kinds of profiling data under the ./recorder.
+
+2. analyze
+```
+cd ./analyzer/
+sh analyzer.sh  your_program_profiling_folder_path
+sh knot.sh
 ```
 
 
