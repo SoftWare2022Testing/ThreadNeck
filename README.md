@@ -30,11 +30,20 @@ sudo make install
 
 
 ## Compile flag
-C program: compile program with "-g" option.
-Java program: start JVM with the option "-XX:+PreserveFramePointer"
-Rust program:  enable the "force-frame-pointers=yes" and "debug=true" flag. 
+1. C program: compile program with "-g" option.
+2. Java program: start JVM with the option "-XX:+PreserveFramePointer"
+3. Rust program:  enable the "force-frame-pointers=yes" and "debug=true" flag. 
 
 
+## how to run
+```
+cd ./module
+make
+cd ./recorder
+make
+
+./record.sh your_program_name
+```
 
 
 
