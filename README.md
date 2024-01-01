@@ -29,6 +29,13 @@ sudo make install
 ```
 
 
+## Compile flag
+C program: compile program with "-g" option.
+Java program: start JVM with the option "-XX:+PreserveFramePointer"
+Rust program:  enable the "force-frame-pointers=yes" and "debug=true" flag. 
+
+
+
 
 
 
