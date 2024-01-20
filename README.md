@@ -60,11 +60,18 @@ after profiling you will see a folder containitng all kinds of profiling data un
 ```
 cd ./analyzer/
 sh analyzer.sh  your_program_profiling_folder_path
+// you need set the threshold to merge the similar thread at this stage
+
 sh knot.sh
+// this script will draw the thread wait & wake graph and output the result
 ```
 
 
 the default value for merging the similar thread is 0.65.
+
+if you don't merge the similar threads ,  the thread wait & wake graph will be very large and difficult to analyze:
+
+![example](./pic/graph.png)
 
 
 
