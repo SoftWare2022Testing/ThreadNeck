@@ -46,8 +46,7 @@ make
 
 ./record.sh your_program_name
 
-// During profiling, you can set the profiling frequency and profiling duration length according to the program's prompts.
-
+# During profiling, you can set the profiling frequency and profiling duration length according to the program's prompts.
 ```
 
 
@@ -63,6 +62,10 @@ cd ./analyzer/
 sh analyzer.sh  your_program_profiling_folder_path
 sh knot.sh
 ```
+
+
+the default value for merging the similar thread is 0.65.
+
 
 
 
