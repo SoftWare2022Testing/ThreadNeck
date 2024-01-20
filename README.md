@@ -45,13 +45,17 @@ cd ./recorder
 make
 
 ./record.sh your_program_name
+
+// During profiling, you can set the profiling frequency and profiling duration length according to the program's prompts.
+
 ```
 
 
 the program_name can be found by ```ps aux```. For java program, by ```jps```
 the program_name is a string like "geth" not the pid
 
-you will see a folder containitng all kinds of profiling data under the ./recorder.
+after profiling you will see a folder containitng all kinds of profiling data under the ./recorder.
+
 
 2. analyze
 ```
