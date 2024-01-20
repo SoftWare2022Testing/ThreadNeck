@@ -4,7 +4,7 @@ Following the "Thread": Toward a Systematic Approach to Find Manipulatable Bottl
 ## Requirements:
 Kernel: version 4.4 and newer. You also need to enable the KProbe and CONFIG_SCHEDSTATS features.
 
-It is suggestted to use the Ubuntu 16.04.1.
+It is suggestted to use the Ubuntu 16.04.1. 
 
 
 ```
@@ -16,7 +16,7 @@ sudo apt-get install ifstat
 
 ```
 
-install sysstat from sources
+install latest sysstat from sources
 
 ```
 git clone git://github.com/sysstat/sysstat
@@ -46,6 +46,10 @@ make
 
 ./record.sh your_program_name
 ```
+
+
+the program_name can be found by ```ps aux```. For java program, by ```jps```
+the program_name is a string like "geth" not the pid
 
 you will see a folder containitng all kinds of profiling data under the ./recorder.
 
